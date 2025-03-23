@@ -1,0 +1,19 @@
+<form nz-form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+    <nz-form-item>
+        <nz-form-control nzErrorTip="Введите эл. почту!">
+            <nz-input-group nzPrefixIcon="github">
+                <input type="text" nz-input formControlName="email" placeholder="Эл. почта" />
+            </nz-input-group>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-control nzErrorTip="Введите пароль!">
+            <nz-input-group nzPrefixIcon="lock">
+                <input type="password" nz-input formControlName="password" placeholder="Пароль" />
+            </nz-input-group>
+        </nz-form-control>
+    </nz-form-item>
+    <button nz-button nzType="primary" [nzLoading]="isFormSubmited()">
+        Авторизоваться
+    </button>
+</form>

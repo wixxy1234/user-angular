@@ -38,9 +38,24 @@
 
 ---
 
-## Что-то на ангулярском
+# Что-то на ангулярском
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
+
+## ng-openapi-gen
+
+Установка пакета:
+```
+npm install -g ng-openapi-gen
+```
+
+Для генерации сервисов конечных точек и моделей Open API:
+```
+ng-openapi-gen --input https://nuadolos1.bsite.net/swagger/v1/swagger.json --output user-app/src/app/api
+```
+
+- *--input* - путь до файла *swagger.json*, содержащий всю документацию API.
+- *--output* - папка, в которую сгенерируются все сервисы и модели.
 
 ## Development server
 
